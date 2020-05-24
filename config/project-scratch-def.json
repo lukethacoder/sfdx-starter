@@ -1,0 +1,22 @@
+{
+  "orgName": "sfdx-starter",
+  "edition": "Developer",
+  "country": "AU",
+  "features": ["Communities"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "securitySettings": {
+      "passwordPolicies": {
+        "enableSetPasswordInApi": true
+      },
+      "sessionSettings": {
+        "sessionTimeout": "TwelveHours"
+      }
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}

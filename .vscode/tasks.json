@@ -1,0 +1,103 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SFDX: Deploy Current File",
+      "type": "shell",
+      "command": "sfdx",
+      "args": [
+        "force:source:deploy",
+        "--sourcepath",
+        "${relativeFile}",
+        "--wait",
+        "10"
+      ],
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SFDX: Retrieve Current File",
+      "type": "shell",
+      "command": "sfdx",
+      "args": [
+        "force:source:retrieve",
+        "--sourcepath",
+        "${relativeFile}",
+        "--wait",
+        "10"
+      ],
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SFDX: Delete Current File",
+      "type": "shell",
+      "command": "sfdx",
+      "args": [
+        "force:source:delete",
+        "--sourcepath",
+        "${relativeFile}",
+        "--wait",
+        "10"
+      ],
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SFDX: Deploy Folder",
+      "type": "shell",
+      "command": "sfdx",
+      "args": [
+        "force:source:deploy",
+        "--sourcepath",
+        "${input:sourcePath}",
+        "--wait",
+        "10"
+      ],
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SFDX: Retrieve Folder",
+      "type": "shell",
+      "command": "sfdx",
+      "args": [
+        "force:source:retrieve",
+        "--sourcepath",
+        "${input:sourcePath}",
+        "--wait",
+        "10"
+      ],
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "SFDX: Delete Folder",
+      "type": "shell",
+      "command": "sfdx",
+      "args": [
+        "force:source:delete",
+        "--sourcepath",
+        "${input:sourcePath}",
+        "--wait",
+        "10"
+      ],
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "sourcePath",
+      "type": "promptString",
+      "description": "Folder path to source metadata",
+      "default": "force-app"
+    }
+  ]
+}

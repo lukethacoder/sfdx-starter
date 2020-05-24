@@ -1,0 +1,51 @@
+{
+  "name": "sfdx-starter",
+  "private": true,
+  "version": "1.0.0",
+  "description": "sfdx-starter",
+  "scripts": {
+    "scratch:create": "sfdx force:org:create -s -v SANDBOX_NAME -f config/project-scratch-def.json -a SCRATCH_ORG_NAME -d 30 -w 10",
+    "rt:apex": "sfdx force:source:retrieve -m ApexClass -u SANDBOX_NAME",
+    "rt:lwc": "sfdx force:source:retrieve -m LightningComponentBundle -u SANDBOX_NAME",
+    "rt:st": "sfdx force:source:retrieve -m StaticResource -u SANDBOX_NAME",
+    "rt:vf": "sfdx force:source:retrieve -m ApexPage -u SANDBOX_NAME",
+    "dp:lwc": "sfdx force:source:deploy -m LightningComponentBundle -u SANDBOX_NAME",
+    "dp:aura": "sfdx force:source:deploy -m AuraDefinitionBundle -u SANDBOX_NAME",
+    "dp:apex": "sfdx force:source:deploy -m ApexClass -u SANDBOX_NAME",
+    "dp:st": "sfdx force:source:deploy -p ./force-app/main/default/staticresources -u SANDBOX_NAME",
+    "dp:vf": "sfdx force:source:deploy -m ApexPage -u SANDBOX_NAME",
+    "apex:hello": "sfdx force:apex:execute -f scripts/apex/hello.apex -u SANDBOX_NAME",
+    "lint": "npm run lint:lwc",
+    "lint:lwc": "eslint force-app/main/default/lwc",
+    "test": "npm run test:unit",
+    "test:unit": "sfdx-lwc-jest",
+    "test:unit:watch": "sfdx-lwc-jest --watch",
+    "test:unit:debug": "sfdx-lwc-jest --debug",
+    "test:unit:coverage": "sfdx-lwc-jest --coverage",
+    "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
+    "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\""
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "^0.7.2",
+    "@salesforce/eslint-config-lwc": "^0.5.0",
+    "@salesforce/sfdx-lwc-jest": "^0.7.1",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.6",
+    "prettier": "^2.0.5",
+    "prettier-plugin-apex": "^1.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{css,html,js,json,md,yaml,yml}": [
+      "prettier --write"
+    ],
+    "force-app/main/default/lwc/**/*.js": [
+      "eslint"
+    ]
+  }
+}
