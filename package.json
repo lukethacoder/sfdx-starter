@@ -5,6 +5,9 @@
   "description": "sfdx-starter",
   "scripts": {
     "scratch:create": "sfdx force:org:create -s -v SANDBOX_NAME -f config/project-scratch-def.json -a SCRATCH_ORG_NAME -d 30 -w 10",
+    "rt:all": "sfdx ext:mdapi:retrieve -b -i -n -h -f -u SANDBOX_NAME",
+    "rt:convert": "sfdx ext:mdapi:convert --sourcedirectory src --targetdirectory ./ ",
+    "rt:clean": "rm -rf src",
     "rt:apex": "sfdx force:source:retrieve -m ApexClass -u SANDBOX_NAME",
     "rt:lwc": "sfdx force:source:retrieve -m LightningComponentBundle -u SANDBOX_NAME",
     "rt:st": "sfdx force:source:retrieve -m StaticResource -u SANDBOX_NAME",
