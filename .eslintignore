@@ -3,4 +3,7 @@
 **/lwc/**/*.json
 **/lwc/**/*.svg
 **/lwc/**/*.xml
+**/staticresources/
 .sfdx
+dist/
+lib/

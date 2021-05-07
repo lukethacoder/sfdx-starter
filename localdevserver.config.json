@@ -1,0 +1,5 @@
+{
+  "namespace": "c",
+  "staticResourcesDirectory": "staticresources",
+  "port": 3333
+}
