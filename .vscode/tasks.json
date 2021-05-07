@@ -10,10 +10,15 @@
         "--sourcepath",
         "${relativeFile}",
         "--wait",
-        "10"
+        "10",
+        "-u",
+        "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
       "problemMatcher": []
     },
     {
@@ -25,10 +30,15 @@
         "--sourcepath",
         "${relativeFile}",
         "--wait",
-        "10"
+        "10",
+        "-u",
+        "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
       "problemMatcher": []
     },
     {
@@ -40,10 +50,15 @@
         "--sourcepath",
         "${relativeFile}",
         "--wait",
-        "10"
+        "10",
+        "-u",
+        "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
       "problemMatcher": []
     },
     {
@@ -55,10 +70,15 @@
         "--sourcepath",
         "${input:sourcePath}",
         "--wait",
-        "10"
+        "10",
+        "-u",
+        "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
       "problemMatcher": []
     },
     {
@@ -70,10 +90,15 @@
         "--sourcepath",
         "${input:sourcePath}",
         "--wait",
-        "10"
+        "10",
+        "-u",
+        "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
       "problemMatcher": []
     },
     {
@@ -85,10 +110,45 @@
         "--sourcepath",
         "${input:sourcePath}",
         "--wait",
-        "10"
+        "10",
+        "-u",
+        "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
-      "presentation": { "reveal": "always", "panel": "shared" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SFDX: Run Current Apex",
+      "type": "shell",
+      "command": "sfdx",
+      "args": [
+        "force:apex:execute",
+        "-f",
+        "${relativeFile}",
+        "-u",
+        "YOUR_ORG_ALIAS_HERE"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SFDX: echo",
+      "type": "shell",
+      "group": "build",
+      "command": "echo",
+      "args": ["YOUR_ORG_ALIAS_HERE"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
       "problemMatcher": []
     }
   ],
