@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "sfdx-starter",
   "scripts": {
+    "prepare": "husky install",
     "scratch:create": "sfdx force:org:create -s -v SANDBOX_NAME -f config/project-scratch-def.json -a SCRATCH_ORG_NAME -d 30 -w 10",
     "rt:all": "sfdx ext:mdapi:retrieve -b -i -n -h -f -u SANDBOX_NAME",
     "rt:convert": "sfdx ext:mdapi:convert --sourcedirectory src --targetdirectory ./ ",
@@ -19,31 +20,24 @@
     "dp:vf": "sfdx force:source:deploy -m ApexPage -u SANDBOX_NAME",
     "apex:hello": "sfdx force:apex:execute -f scripts/apex/hello.apex -u SANDBOX_NAME",
     "lint": "npm run lint:lwc",
-    "lint:lwc": "eslint force-app/main/default/lwc",
-    "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
-    "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\""
+    "lint:lwc": "eslint force-app/main/default/lwc"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "1.2.0",
     "@salesforce/eslint-config-lwc": "3.2.1",
     "@salesforce/sfdx-lwc-jest": "1.1.0",
     "eslint": "8.10.0",
-    "husky": "7.0.4",
+    "husky": "^7.0.4",
     "lint-staged": "12.3.5",
     "prettier": "2.5.1",
     "prettier-plugin-apex": "1.10.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "**/*.{css,html,js,json,md,yaml,yml}": [
+    "**/*.{css,html,js,json,md,yaml,yml,cmp}": [
       "prettier --write"
     ],
     "force-app/main/default/lwc/**/*.js": [
-      "eslint"
+      "eslint --cache --fix"
     ]
   }
 }
