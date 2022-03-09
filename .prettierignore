@@ -12,7 +12,7 @@ dist/
 coverage/
 
 # Ignore Aura Components
-**/aura/
+**/aura/**/*.js
 
 # Ignore Static Resources
 **/staticresources/**

@@ -2,8 +2,21 @@
   "orgName": "sfdx-starter",
   "edition": "Developer",
   "country": "AU",
-  "features": ["Communities"],
+  "features": [
+    "CMSUnlimitedUse",
+    "Communities",
+    "ContactsToMultipleAccounts",
+    "HealthCloudUser",
+    "Knowledge",
+    "PersonAccounts",
+    "PlatformCache",
+    "ProcessBuilder",
+    "ProductsAndSchedules"
+  ],
   "settings": {
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
