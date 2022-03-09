@@ -6,9 +6,23 @@
 .sfdx/
 .localdevserver/
 
+# Intellij cache
+.idea/
+manifest/
+
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
 **/.eslintrc.json
+
+# Apex Enterprise Patterns
+/at4dx
+/fflib-apex-common
+/fflib-apex-mocks
+/force-di
+
+# dotenv environment variables file
+.env
+.env.test
 
 # LWC Jest coverage reports
 coverage/
@@ -28,9 +42,3 @@ node_modules/
 
 # MacOS system files
 .DS_Store
-
-# Windows system files
-Thumbs.db
-ehthumbs.db
-[Dd]esktop.ini
-$RECYCLE.BIN/
