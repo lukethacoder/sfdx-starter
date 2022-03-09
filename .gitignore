@@ -9,6 +9,7 @@
 # Intellij cache
 .idea/
 manifest/
+IlluminatedCloud/
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
