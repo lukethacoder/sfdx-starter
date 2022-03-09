@@ -27,7 +27,7 @@
     "@salesforce/eslint-config-lwc": "3.2.1",
     "@salesforce/sfdx-lwc-jest": "1.1.0",
     "eslint": "8.10.0",
-    "husky": "^7.0.4",
+    "husky": "7.0.4",
     "lint-staged": "12.3.5",
     "prettier": "2.5.1",
     "prettier-plugin-apex": "1.10.0"
