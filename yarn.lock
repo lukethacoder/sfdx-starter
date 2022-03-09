@@ -904,7 +904,7 @@
   resolved "https://registry.yarnpkg.com/@lwc/wire-service/-/wire-service-1.1.13-224.4.tgz#a71e5dd38c2a882b6499ac75688d3dee6cb68dcc"
   integrity sha512-5AJw1Ybux4+w+ep6ixIOn7QI1LpG3sgzuiLPayteoMySlbBLDXM1lPKVWviRXWXhzT+w2/5Zj0f72M5d4zW6uA==
 
-"@prettier/plugin-xml@^0.7.2":
+"@prettier/plugin-xml@0.7.2":
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@prettier/plugin-xml/-/plugin-xml-0.7.2.tgz#f4b6e7c45a9e36663d403828e380e8a4c6a12106"
   integrity sha512-c6i6OQ2y9kvWeUTrfkwHy+jdJXI3bpO8TT9EoVjJIEAApj5gLtJ/O2D9qthxWXh5zbipngueDEC2CT6tBZzBdA==
@@ -912,7 +912,7 @@
     "@xml-tools/parser" "^1.0.2"
     prettier ">=1.10"
 
-"@salesforce/eslint-config-lwc@^0.5.0":
+"@salesforce/eslint-config-lwc@0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@salesforce/eslint-config-lwc/-/eslint-config-lwc-0.5.0.tgz#df81a93e8e4bc4b52e02973fd4a8cb3292014ad8"
   integrity sha512-t2lwpxIylyKkEtE2q5rb1qZigrTMq4Q2j2xMUzGKkIIDD+kA3LRLU8rAD/WxOJG8ihFuF705d1VGsIGdrOSc4A==
@@ -923,7 +923,7 @@
     eslint-plugin-jest "^23.6.0"
     eslint-restricted-globals "^0.2.0"
 
-"@salesforce/sfdx-lwc-jest@^0.7.1":
+"@salesforce/sfdx-lwc-jest@0.7.1":
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/@salesforce/sfdx-lwc-jest/-/sfdx-lwc-jest-0.7.1.tgz#d38cafd0a28fb21cafe71782f08344b1c4cb0b3a"
   integrity sha512-qXLWkdvNfGoEfFa/2u1V09MfyR/9WO2RrkwgbNOuTF6yfqyr2Vzyc6xfbRMOVQY3xgzM38VekFavS+K+TGArBQ==
@@ -2261,7 +2261,7 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@^6.8.0:
+eslint@6.8.0:
   version "6.8.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.8.0.tgz#62262d6729739f9275723824302fb227c8c93ffb"
   integrity sha512-K+Iayyo2LtyYhDSYwz5D5QdWw0hCacNzyq1Y821Xna2xSJj7cijoLLYmLxTQgcgZ9mC61nryMy9S7GRbYpI5Ig==
@@ -2834,7 +2834,7 @@ human-signals@^1.1.1:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
 
-husky@^4.2.5:
+husky@4.3.8:
   version "4.3.8"
   resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.8.tgz#31144060be963fd6850e5cc8f019a1dfe194296d"
   integrity sha512-LCqqsB0PzJQ/AlCgfrfzRe3e3+NvmefAdKQhRYpxS4u6clblBoDdzzvHi8fmxKRzvMxPY/1WZWzomPZww0Anow==
@@ -3825,7 +3825,7 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^10.2.6:
+lint-staged@10.5.4:
   version "10.5.4"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.5.4.tgz#cd153b5f0987d2371fc1d2847a409a2fe705b665"
   integrity sha512-EechC3DdFic/TdOPgj/RB3FicqE6932LTHCUm0Y2fsD9KGlLB+RwJl2q1IYBIvEsKzDOgn0D4gll+YxG5RsrKg==
@@ -4831,7 +4831,7 @@ prepend-http@^1.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
 
-prettier-plugin-apex@^1.4.0:
+prettier-plugin-apex@1.10.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/prettier-plugin-apex/-/prettier-plugin-apex-1.10.0.tgz#c125ec04afbe0f7c70e6b64359fc73c9af89a3ba"
   integrity sha512-Kh6kMNq5IfCxlP49wsZbt2Pq/dx4zbwbEdjUcP9GCmXfRLGuoa6mrT26kIv8TJnEjFCPVzUjg1u0qa3qBStLmQ==
@@ -4841,15 +4841,15 @@ prettier-plugin-apex@^1.4.0:
     wait-on "^5.2.1"
     yargs "^17.0.0"
 
+prettier@2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+
 prettier@>=1.10:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
   integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
-
-prettier@^2.0.5:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
-  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 pretty-format@^24.9.0:
   version "24.9.0"
