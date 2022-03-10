@@ -1049,10 +1049,10 @@
     "@xml-tools/parser" "^1.0.11"
     prettier ">=2.3"
 
-"@salesforce/eslint-config-lwc@3.2.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@salesforce/eslint-config-lwc/-/eslint-config-lwc-3.2.2.tgz#75e2d6e9e0106344804dc72a6d6c66fab447943e"
-  integrity sha512-I6izCmk+AV9lXymSlEmsc2VdXghloruNoYKhmICyc58u1xNIslYAF4/+4GEtqQz6ovjkK8k+6+otN7Bsw4oAnw==
+"@salesforce/eslint-config-lwc@3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@salesforce/eslint-config-lwc/-/eslint-config-lwc-3.2.3.tgz#57e976b5f7084d92f441e370f2c1ef05e6b2688f"
+  integrity sha512-NyF3asJgZX2vc35Zx5ehQWp13Y/Hh6F/GRho1WQvijPEdvMmn50XdMPi80EIRmbAvOBfN+z38R3ScTiZn2PH9w==
   dependencies:
     "@babel/core" "~7.16.7"
     "@babel/eslint-parser" "~7.16.3"
