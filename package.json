@@ -29,7 +29,7 @@
     "eslint": "8.11.0",
     "husky": "7.0.4",
     "lint-staged": "12.3.7",
-    "prettier": "2.6.0",
+    "prettier": "2.6.1",
     "prettier-plugin-apex": "1.10.0"
   },
   "lint-staged": {
