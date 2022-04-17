@@ -23,7 +23,7 @@
     "lint:lwc": "eslint force-app/main/default/lwc"
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "2.0.1",
+    "@prettier/plugin-xml": "2.1.0",
     "@salesforce/eslint-config-lwc": "3.3.0",
     "@salesforce/sfdx-lwc-jest": "1.1.0",
     "eslint": "8.13.0",
