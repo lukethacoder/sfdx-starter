@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@prettier/plugin-xml": "2.2.0",
-    "@salesforce/eslint-config-lwc": "3.3.2",
+    "@salesforce/eslint-config-lwc": "3.3.3",
     "@salesforce/sfdx-lwc-jest": "1.1.0",
     "eslint": "8.19.0",
     "husky": "8.0.1",
