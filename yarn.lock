@@ -1267,10 +1267,10 @@
     eslint-restricted-globals "~0.2.0"
     semver "^7.3.7"
 
-"@salesforce/sfdx-lwc-jest@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@salesforce/sfdx-lwc-jest/-/sfdx-lwc-jest-1.1.1.tgz#ed10c6c1635ede96c4f8bd27b4132a9ea916dfe2"
-  integrity sha512-erePBQu65q+M63NUffoQer1XjJDUXtmavgZeQDqn4mhNynS7hCux5BBwJodcxIMXVMLz3ibzyZAz4EWEGZCF4A==
+"@salesforce/sfdx-lwc-jest@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@salesforce/sfdx-lwc-jest/-/sfdx-lwc-jest-1.1.2.tgz#19f712564187e01e4a977e2791c471f3301b00a3"
+  integrity sha512-RVcoM3NFQ/OyNpfxWFo+BhOa5C+YpWoiWUMKP48tFOySbvyJmiJQS29VTA3LqzxI7YPqRziOtt9JI3qfEkUVdA==
   dependencies:
     "@lwc/compiler" "2.11.8"
     "@lwc/engine-dom" "2.11.8"
