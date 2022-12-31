@@ -6,12 +6,11 @@
     "CMSUnlimitedUse",
     "Communities",
     "ContactsToMultipleAccounts",
-    "HealthCloudUser",
+    "EnableSetPasswordInApi",
     "Knowledge",
     "PersonAccounts",
     "PlatformCache",
-    "ProcessBuilder",
-    "ProductsAndSchedules"
+    "ProcessBuilder"
   ],
   "settings": {
     "communitiesSettings": {
@@ -21,9 +20,6 @@
       "enableS1DesktopEnabled": true
     },
     "securitySettings": {
-      "passwordPolicies": {
-        "enableSetPasswordInApi": true
-      },
       "sessionSettings": {
         "sessionTimeout": "TwelveHours"
       }
@@ -33,3 +29,4 @@
     }
   }
 }
+
