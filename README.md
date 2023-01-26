@@ -5,7 +5,7 @@ A quick start repo for sfdx based projects.
 ## Features
 
 - fflib/at4dx install script
-- `prettier` & `eslint` config
+- `prettier` & `eslint` config (feat. `githooks` to enforce `node_modules` install)
 - helper scripts
 - `project-scratch-def.json` config for communities, cms and knowledge
 - `.vscode/tasks.json` Metadata tasks (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>)
