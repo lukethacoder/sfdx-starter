@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if ! [[ -d "./node_modules/" ]]
+then
+  echo "! node_modules does not exist. Please run 'yarn' and run commit again."
+
+	exit 1
+fi
