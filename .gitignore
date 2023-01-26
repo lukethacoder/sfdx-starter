@@ -11,10 +11,6 @@
 manifest/
 IlluminatedCloud/
 
-# LWC VSCode autocomplete
-**/lwc/jsconfig.json
-**/.eslintrc.json
-
 # Apex Enterprise Patterns
 /at4dx
 /fflib-apex-common

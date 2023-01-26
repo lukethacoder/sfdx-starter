@@ -1445,7 +1445,7 @@
     "@xml-tools/parser" "^1.0.11"
     prettier ">=2.4.0"
 
-"@salesforce/eslint-config-lwc@3.3.4":
+"@salesforce/eslint-config-lwc@^3.3.4":
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/@salesforce/eslint-config-lwc/-/eslint-config-lwc-3.3.4.tgz#0cb93e87988a931dd2c2ce60b75dbfd978ba370b"
   integrity sha512-Z+UymAmX80Szs4+PaMTJ/XHX9Rgp5sNv0AggCBJFPT94pAWm3UvjLpya+iE1pDblEOrgu97Js059Y/wMONqBzg==
@@ -1455,7 +1455,7 @@
     eslint-restricted-globals "~0.2.0"
     semver "^7.3.8"
 
-"@salesforce/sfdx-lwc-jest@1.2.1":
+"@salesforce/sfdx-lwc-jest@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@salesforce/sfdx-lwc-jest/-/sfdx-lwc-jest-1.2.1.tgz#67130583874685788fedb7837afa0b81868de1ae"
   integrity sha512-KBntqX81/ICOvA7X+KHos7dp9JGsCBwvNTlTfxaQNt9sYJSwCwjtmKKOrlokRofDIj9uFCCIOP5a0ZYi6Dastg==

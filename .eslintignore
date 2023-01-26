@@ -3,7 +3,6 @@
 **/lwc/**/*.json
 **/lwc/**/*.svg
 **/lwc/**/*.xml
-**/staticresources/
+**/lwc/**/*.test.js
+**/aura/**/*
 .sfdx
-dist/
-lib/

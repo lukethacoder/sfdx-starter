@@ -1,0 +1,13 @@
+<template>
+  <h1>{value}</h1>
+  <button type="button" onclick={handleClickButton}>click me</button>
+
+  <template if:true={errorMessage}>
+    <p>{errorMessage}</p>
+  </template>
+  <ul>
+    <template for:each={accounts} for:item="item">
+      <li key={item.id}>{item.id}</li>
+    </template>
+  </ul>
+</template>

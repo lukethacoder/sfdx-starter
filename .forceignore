@@ -10,3 +10,5 @@ package.xml
 
 # LWC Jest
 **/__tests__/**
+# ignore example jest test LWC
+**/_jestTest/

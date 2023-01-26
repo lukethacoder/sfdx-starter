@@ -9,6 +9,7 @@
   "tabWidth": 2,
   "trailingComma": "es5",
   "useTabs": false,
+  "xmlWhitespaceSensitivity": "ignore",
   "overrides": [
     {
       "files": "**/lwc/**/*.html",
