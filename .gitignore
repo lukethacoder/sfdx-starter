@@ -4,7 +4,7 @@
 
 # Salesforce cache
 .sfdx/
-.localdevserver/
+__lwr_cache__/
 
 # Intellij cache
 .idea/

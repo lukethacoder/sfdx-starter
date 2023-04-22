@@ -16,9 +16,12 @@ export default class JestTestingExample extends LightningElement {
     parentAccountName: '$parentAccountName',
     communityId: communityId,
   })
-  wiredGetAccountsList({ error, data }) {
+  wiredGetAccountsList(response) {
+    console.log('other? ', response)
+    const { error, data } = response
     if (data) {
       this.accounts = data
+      console.log('this.accounts ', this.accounts)
     } else if (error) {
       console.error('Error fetching accounts ', error)
       this.errorMessage = 'Unable to fetch accounts'

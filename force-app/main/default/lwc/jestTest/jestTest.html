@@ -5,9 +5,10 @@
   <template if:true={errorMessage}>
     <p>{errorMessage}</p>
   </template>
+
   <ul>
     <template for:each={accounts} for:item="item">
-      <li key={item.id}>{item.id}</li>
+      <li key={item.Id}>{item.Name}</li>
     </template>
   </ul>
 </template>

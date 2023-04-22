@@ -1,0 +1,35 @@
+{
+  "lwc": {
+    "modules": [
+      { "dir": "$rootDir/config" },
+      { "dir": "$rootDir/force-app/main/default/lwc", "namespace": "c" },
+      {
+        "name": "@salesforce/community/Id",
+        "path": "mocks/lwc/@salesforce/community/Id.js"
+      },
+      {
+        "name": "@salesforce/apex/AccountController.getAccounts",
+        "path": "mocks/apex/AccountController.getAccounts.js"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "id": "app",
+      "path": "/",
+      "rootComponent": "base/app"
+    }
+  ],
+  "assets": [
+    {
+      "alias": "assetsDir",
+      "dir": "$rootDir/assets",
+      "urlPath": "/public/assets"
+    },
+    {
+      "alias": "favicon",
+      "file": "$rootDir/assets/favicon.png",
+      "urlPath": "/favicon.ico"
+    }
+  ]
+}
