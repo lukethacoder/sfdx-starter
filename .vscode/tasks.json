@@ -2,16 +2,18 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "SFDX: Deploy Current File",
+      "label": "SF CLI: Deploy Current File",
       "type": "shell",
-      "command": "sfdx",
+      "command": "sf",
       "args": [
-        "force:source:deploy",
-        "--sourcepath",
+        "project",
+        "deploy",
+        "start",
+        "--source-dir",
         "${relativeFile}",
         "--wait",
-        "10",
-        "-u",
+        "2",
+        "-o",
         "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
@@ -22,16 +24,18 @@
       "problemMatcher": []
     },
     {
-      "label": "SFDX: Retrieve Current File",
+      "label": "SF CLI: Retrieve Current File",
       "type": "shell",
-      "command": "sfdx",
+      "command": "sf",
       "args": [
-        "force:source:retrieve",
-        "--sourcepath",
+        "project",
+        "retrieve",
+        "start",
+        "--source-dir",
         "${relativeFile}",
         "--wait",
-        "10",
-        "-u",
+        "2",
+        "-o",
         "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
@@ -42,16 +46,18 @@
       "problemMatcher": []
     },
     {
-      "label": "SFDX: Delete Current File",
+      "label": "SF CLI: Delete Current File",
       "type": "shell",
-      "command": "sfdx",
+      "command": "sf",
       "args": [
-        "force:source:delete",
-        "--sourcepath",
+        "project",
+        "delete",
+        "source",
+        "--source-dir",
         "${relativeFile}",
         "--wait",
-        "10",
-        "-u",
+        "2",
+        "-o",
         "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
@@ -62,16 +68,18 @@
       "problemMatcher": []
     },
     {
-      "label": "SFDX: Deploy Folder",
+      "label": "SF CLI: Deploy Folder",
       "type": "shell",
-      "command": "sfdx",
+      "command": "sf",
       "args": [
-        "force:source:deploy",
-        "--sourcepath",
+        "project",
+        "deploy",
+        "start",
+        "--source-dir",
         "${input:sourcePath}",
         "--wait",
-        "10",
-        "-u",
+        "2",
+        "-o",
         "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
@@ -82,16 +90,18 @@
       "problemMatcher": []
     },
     {
-      "label": "SFDX: Retrieve Folder",
+      "label": "SF CLI: Retrieve Folder",
       "type": "shell",
-      "command": "sfdx",
+      "command": "sf",
       "args": [
-        "force:source:retrieve",
-        "--sourcepath",
+        "project",
+        "retrieve",
+        "start",
+        "--source-dir",
         "${input:sourcePath}",
         "--wait",
-        "10",
-        "-u",
+        "2",
+        "-o",
         "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
@@ -102,16 +112,18 @@
       "problemMatcher": []
     },
     {
-      "label": "SFDX: Delete Folder",
+      "label": "SF CLI: Delete Folder",
       "type": "shell",
-      "command": "sfdx",
+      "command": "sf",
       "args": [
-        "force:source:delete",
-        "--sourcepath",
+        "project",
+        "delete",
+        "source",
+        "--source-dir",
         "${input:sourcePath}",
         "--wait",
-        "10",
-        "-u",
+        "2",
+        "-o",
         "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
@@ -122,14 +134,15 @@
       "problemMatcher": []
     },
     {
-      "label": "SFDX: Run Current Apex",
+      "label": "SF CLI: Run Current Apex",
       "type": "shell",
-      "command": "sfdx",
+      "command": "sf",
       "args": [
-        "force:apex:execute",
+        "apex",
+        "run",
         "-f",
         "${relativeFile}",
-        "-u",
+        "-o",
         "YOUR_ORG_ALIAS_HERE"
       ],
       "group": "build",
@@ -140,7 +153,7 @@
       "problemMatcher": []
     },
     {
-      "label": "SFDX: echo",
+      "label": "SF CLI: echo",
       "type": "shell",
       "group": "build",
       "command": "echo",
