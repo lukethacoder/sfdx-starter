@@ -37,4 +37,4 @@ All tests can be run using:
 pnpm test
 ```
 
-Jest testing uses the `@lwc/jest-*` packages, not `@salesforce/sfdx-jest-test`.
+Jest testing uses the [`@lwc/jest-*`](https://github.com/salesforce/lwc-test) packages, not [`@salesforce/sfdx-lwc-jest`](https://github.com/salesforce/sfdx-lwc-jest).
