@@ -1,25 +1,30 @@
+import communityId from '../../../../../../__mocks__/lwc/@salesforce/community/Id'
 import { createElement } from 'lwc'
-import LwcComponent from 'c/jestTest'
-
-// Jest Utilities
-import {
-  componentSetup,
-  flushPromises,
-} from '../../../../../../mocks/utilities'
-import communityIdMock from '../../../../../../mocks/lwc/@salesforce/community/Id'
 
 // Apex methods
 import getAccountsList from '@salesforce/apex/AccountController.getAccounts'
 
+import LwcComponent from 'c/jestTest'
+import { timeout } from 'c/utils'
+
+import { componentSetup } from '../../../../../../testUtils'
+
 /* Component Setup */
-const LWC_COMPONENT = 'c-jest-testing-example'
-const setup = () => componentSetup(LWC_COMPONENT, LwcComponent)
+const setup = () => {
+  const element = createElement('lwc-component', {
+    is: LwcComponent,
+  })
+  document.body.appendChild(element)
+  return element
+}
 
 /* Apex Method Mocks */
 jest.mock(
   '@salesforce/apex/AccountController.getAccounts',
   () => {
-    const { createApexTestWireAdapter } = require('@salesforce/sfdx-lwc-jest')
+    const {
+      createApexTestWireAdapter,
+    } = require('@salesforce/wire-service-jest-util')
     return {
       default: createApexTestWireAdapter(jest.fn()),
     }
@@ -29,13 +34,13 @@ jest.mock(
 
 const WIRE_INPUT_DEFAULT = {
   parentAccountName: 'Soda Strategic',
-  communityId: communityIdMock,
+  communityId,
 }
 
 const TEST_ACCOUNTS = [
   {
-    id: 'soda-strategic',
-    name: 'Soda Strategic',
+    Id: 'soda-strategic',
+    Name: 'Soda Strategic',
   },
 ]
 
@@ -50,11 +55,19 @@ describe('c-jest-test', () => {
     jest.clearAllMocks()
   })
 
+  it('test componentSetup with initialProps', async () => {
+    const element = componentSetup('lwc-component', LwcComponent, {
+      parentAccountName: 'Deloitte Digital',
+    })
+
+    expect(element.parentAccountName).toBe('Deloitte Digital')
+  })
+
   it('gets called with a default configuration', async () => {
     setup()
 
     // Wait for any asynchronous DOM updates
-    await flushPromises()
+    await timeout()
 
     // Check if the default object is passed as parameter
     expect(getAccountsList.getLastConfig()).toEqual(WIRE_INPUT_DEFAULT)
@@ -67,12 +80,12 @@ describe('c-jest-test', () => {
     element.parentAccountName = 'Google'
 
     // Wait for any asynchronous DOM updates
-    await flushPromises()
+    await timeout()
 
     // Validate parameters of mocked Apex call
     expect(getAccountsList.getLastConfig()).toEqual({
       parentAccountName: 'Google',
-      communityId: communityIdMock,
+      communityId,
     })
   })
 
@@ -83,19 +96,28 @@ describe('c-jest-test', () => {
     getAccountsList.emit(TEST_ACCOUNTS)
 
     // Wait for any asynchronous DOM updates
-    await flushPromises()
+    await timeout()
 
-    // Return a promise to wait for any asynchronous DOM updates. Jest
-    // will automatically wait for the Promise chain to complete before
-    // ending the test and fail the test if the promise rejects.
-    return Promise.resolve().then(() => {
-      // check the list has been rendered to the page
-      const liEl = element.shadowRoot.querySelector('li')
-      expect(liEl.textContent).toBe(TEST_ACCOUNTS[0].id)
-    })
+    // check the list has been rendered to the page
+    const liEl = element.shadowRoot.querySelector('li')
+    expect(liEl.textContent).toBe(TEST_ACCOUNTS[0].Name)
   })
 
-  it('value change on button click', () => {
+  it('@wire: catch error response', async () => {
+    const element = setup()
+
+    // throw error from @wire
+    getAccountsList.error()
+
+    // Wait for any asynchronous DOM updates
+    await timeout()
+
+    // check the error has been displayed to the user
+    const errorEl = element.shadowRoot.querySelector('[data-error]')
+    expect(errorEl.textContent).toBe('Unable to fetch accounts')
+  })
+
+  it('value change on button click', async () => {
     const element = setup()
 
     // Assert
@@ -105,8 +127,8 @@ describe('c-jest-test', () => {
     const button = element.shadowRoot.querySelector('button')
     button.click()
 
-    return Promise.resolve().then(() => {
-      expect(text.textContent).toBe('new-value')
-    })
+    await timeout()
+
+    expect(text.textContent).toBe('new-value')
   })
 })

@@ -10,6 +10,7 @@ A quick start repo for sfdx based projects.
 - `project-scratch-def.json` config for communities, cms and knowledge
 - `.vscode/tasks.json` Metadata tasks (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>)
 - `.vscode/settings.json` to hide `.xml` files and less commonly used metadata. (This can be edited)
+- Jest Testing
 
 ### fflib/at4dx
 
@@ -27,3 +28,13 @@ node --harmony setup-fflib.mjs e- ORG_ALIAS
 ```
 
 > [For more info, and an updated script](https://gist.github.com/lukethacoder/dd2af8ef3cc344b6dc15a9cd6a5569f2)
+
+### Jest Testing
+
+All tests can be run using:
+
+```cmd
+pnpm test
+```
+
+Jest testing uses the `@lwc/jest-*` packages, not `@salesforce/sfdx-jest-test`.
