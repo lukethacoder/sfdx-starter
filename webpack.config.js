@@ -1,6 +1,7 @@
 const path = require('path')
 const LwcWebpackPlugin = require('@lukethacoder/lwc-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const lwcConfig = require('./lwc.config.json')
 
@@ -33,8 +34,14 @@ module.exports = {
       rootDir: './',
     }),
     new HtmlWebpackPlugin({ template: './config/index.html' }),
+    new CopyPlugin({
+      patterns: ['assets'],
+    }),
   ],
   resolve: {
-    alias: namePathModules,
+    alias: {
+      ...namePathModules,
+      public: path.resolve(__dirname, 'public'),
+    },
   },
 }
