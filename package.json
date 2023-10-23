@@ -15,7 +15,7 @@
     "lint:lwc": "eslint force-app/main/default/lwc"
   },
   "devDependencies": {
-    "@lukethacoder/lwc-module-resolver": "^3.0.0",
+    "@lukethacoder/lwc-module-resolver": "^4.0.0",
     "@lwc/compiler": "^4.0.0",
     "@lwc/engine-dom": "^4.0.0",
     "@lwc/engine-server": "^4.0.0",
