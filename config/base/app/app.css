@@ -1,0 +1,21 @@
+:host {
+  background-color: burlywood;
+  display: flex;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border: none;
+}

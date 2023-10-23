@@ -1,7 +1,7 @@
 /**
  * https://lwc.dev/guide/wire_adapter#wire-adapters
  */
-export default class getAccounts {
+export default class getAccountsList {
   connected = false
   parentAccountName
 

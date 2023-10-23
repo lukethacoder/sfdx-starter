@@ -6,6 +6,9 @@
 .sfdx/
 __lwr_cache__/
 
+# build cache
+dist/
+
 # Intellij cache
 .idea/
 manifest/

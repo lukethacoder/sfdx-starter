@@ -1,0 +1,20 @@
+{
+  "modules": [
+    {
+      "dir": "./config/base",
+      "namespace": "base"
+    },
+    {
+      "dir": "./force-app/main/default/lwc",
+      "namespace": "c"
+    },
+    {
+      "name": "@salesforce/community/Id",
+      "path": "./__mocks__/lwc/@salesforce/community/Id.js"
+    },
+    {
+      "name": "@salesforce/apex/AccountController.getAccounts",
+      "path": "./__mocks__/apex/AccountController.getAccounts.js"
+    }
+  ]
+}

@@ -3,11 +3,18 @@
   "private": true,
   "version": "1.0.0",
   "description": "sfdx-starter",
+  "pnpm": {
+    "overrides": {
+      "@lwc/module-resolver": "$@lukethacoder/lwc-module-resolver"
+    }
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
+    "dev": "npx webpack serve --mode development",
+    "build": "npx webpack",
+    "start": "serve ./dist",
     "scratch:create": "sf org create scratch -v ALIAS_OF_YOUR_DEBHUB -f config/project-scratch-def.json -a ALIAS_FOR_SCRATCH_ORG -y 30 -w 10",
-    "dev": "lwr dev",
     "test": "jest --no-cache",
     "test:watch": "jest --watch",
     "test:debug": "jest --debug",
@@ -15,7 +22,8 @@
     "lint:lwc": "eslint force-app/main/default/lwc"
   },
   "devDependencies": {
-    "@lukethacoder/lwc-module-resolver": "^3.0.0",
+    "@lukethacoder/lwc-module-resolver": "^4.0.1",
+    "@lukethacoder/lwc-webpack-plugin": "^4.1.0",
     "@lwc/compiler": "^4.0.0",
     "@lwc/engine-dom": "^4.0.0",
     "@lwc/engine-server": "^4.0.0",
@@ -23,29 +31,29 @@
     "@lwc/jest-shared": "^14.1.0",
     "@lwc/jest-transformer": "^14.1.0",
     "@lwc/synthetic-shadow": "^4.0.0",
-    "@lwrjs/client-modules": "^0.10.0",
-    "@lwrjs/loader": "^0.10.0",
-    "@lwrjs/o11y": "^0.10.0",
-    "@lwrjs/router": "^0.10.0",
+    "@lwrjs/client-modules": "^0.10.10",
+    "@lwrjs/loader": "^0.10.10",
+    "@lwrjs/o11y": "^0.10.10",
+    "@lwrjs/router": "^0.10.10",
     "@prettier/plugin-xml": "3.2.1",
     "@salesforce/eslint-config-lwc": "^3.5.2",
     "@salesforce/sfdx-lwc-jest": "^3.0.0",
     "@salesforce/wire-service-jest-util": "^4.0.2",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "eslint": "^8.44.0",
+    "html-webpack-plugin": "^5.5.3",
     "husky": "^8.0.3",
     "jest": "^29.6.4",
     "jest-environment-jsdom": "^29.6.4",
     "lint-staged": "^15.0.0",
     "lwc": "^4.0.0",
-    "lwr": "^0.10.0",
+    "lwr": "^0.10.10",
     "prettier": "^3.0.0",
-    "prettier-plugin-apex": "^2.0.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "@lwc/module-resolver": "npm:@lukethacoder/lwc-module-resolver"
-    }
+    "prettier-plugin-apex": "^2.0.1",
+    "serve": "^14.2.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "lint-staged": {
     "**/*.{css,html,js,json,md,yaml,yml}": [
