@@ -35,7 +35,7 @@
     "@lwrjs/loader": "^0.10.10",
     "@lwrjs/o11y": "^0.10.10",
     "@lwrjs/router": "^0.10.10",
-    "@prettier/plugin-xml": "3.2.1",
+    "@prettier/plugin-xml": "3.2.2",
     "@salesforce/eslint-config-lwc": "^3.5.2",
     "@salesforce/sfdx-lwc-jest": "^3.0.0",
     "@salesforce/wire-service-jest-util": "^4.0.2",
