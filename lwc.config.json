@@ -10,7 +10,7 @@
     },
     {
       "name": "@salesforce/community/Id",
-      "path": "./__mocks__/lwc/@salesforce/community/Id.js"
+      "path": "./__mocks__/@salesforce/community/Id.js"
     },
     {
       "name": "@salesforce/apex/AccountController.getAccounts",

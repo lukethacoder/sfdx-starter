@@ -42,6 +42,22 @@ module.exports = {
     alias: {
       ...namePathModules,
       public: path.resolve(__dirname, 'public'),
+      '@salesforce/label': path.resolve(
+        __dirname,
+        `./__mocks__/@salesforce/label`
+      ),
+      '@salesforce/i18n': path.resolve(
+        __dirname,
+        `./__mocks__/@salesforce/i18n`
+      ),
+      '@salesforce/messageChannel': path.resolve(
+        __dirname,
+        `./__mocks__/@salesforce/messageChannel`
+      ),
+      'lightning/messageService': path.resolve(
+        __dirname,
+        `./__mocks__/lightning/messageService`
+      ),
     },
   },
 }
