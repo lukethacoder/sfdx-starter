@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/lukethacoder/sfdx-starter">
-    <img src="./public/favicon.png" alt="Logo" width="120" height="120">
+    <img src="./assets/favicon.png" alt="Logo" width="120" height="120">
   </a>
 
 <h3 align="center">sfdx-starter</h3>
