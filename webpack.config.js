@@ -50,6 +50,10 @@ module.exports = {
         __dirname,
         `./__mocks__/@salesforce/i18n`
       ),
+      'lightning/uiRecordApi': path.resolve(
+        __dirname,
+        `./__mocks__/lightning/uiRecordApi`
+      ),
       '@salesforce/messageChannel': path.resolve(
         __dirname,
         `./__mocks__/@salesforce/messageChannel`
