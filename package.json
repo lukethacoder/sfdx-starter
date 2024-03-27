@@ -23,7 +23,7 @@
   "devDependencies": {
     "@lukethacoder/lwc-module-resolver": "^4.0.1",
     "@lukethacoder/lwc-webpack-plugin": "^4.2.0",
-    "@lwc-garden/core": "^0.0.3",
+    "@lwc-garden/core": "^0.0.4",
     "@lwc/compiler": "^6.3.4",
     "@lwc/engine-dom": "^6.3.4",
     "@lwc/engine-server": "^6.3.4",
