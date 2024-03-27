@@ -46,6 +46,11 @@
       </ul>
     </li>
     <li>
+      <a href="#lwc-local-development">
+        LWC Local Development
+      </a>
+    </li>
+    <li>
       <a href="#jest-testing">Jest Testing</a>
     </li>
     <li><a href="#license">License</a></li>
@@ -59,6 +64,7 @@
 
 ### Features
 
+- 🍃 lwc-local-dev-server ([LWC Garden](https://lwc.garden?utm_campaign=sfdx-starter))
 - ⚖️ fflib/at4dx install script
 - 💅 `prettier` & `eslint` config (feat. `githooks` to enforce `node_modules` install)
 - 🧪 Jest Testing
@@ -91,6 +97,8 @@ Make sure you have [`node`](https://nodejs.org/en), [`pnpm`](https://pnpm.io/) a
 1. Go to [lukethacoder/sfdx-starter](https://github.com/lukethacoder/sfdx-starter)
 2. Click "Use this template"
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### fflib/at4dx
 
 The script installs the following packages as a part of [the apex-enterprise-patterns](https://github.com/apex-enterprise-patterns).
@@ -109,6 +117,20 @@ node --harmony setup-fflib.mjs e- ORG_ALIAS
 > [For more info, and an updated script](https://gist.github.com/lukethacoder/dd2af8ef3cc344b6dc15a9cd6a5569f2)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LWC Local Development -->
+
+## LWC Local Development
+
+We use the `@lwc-garden/core` package to facilitate local LWC development.
+
+This can be run locally using:
+
+```cmd
+npx @lwc-garden/core dev
+```
+
+Read the [LWC Garden Documentation](https://lwc.garden/) for more information.
 
 <!-- TESTING -->
 

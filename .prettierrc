@@ -37,7 +37,11 @@
   ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
-  "importOrderParserPlugins": ["classProperties", "decorators-legacy"],
+  "importOrderParserPlugins": [
+    "classProperties",
+    "decorators-legacy",
+    "importAssertions"
+  ],
   "overrides": [
     {
       "files": "**/lwc/**/*.html",

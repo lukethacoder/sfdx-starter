@@ -1,8 +1,8 @@
 {
   "modules": [
     {
-      "dir": "./config/base",
-      "namespace": "base"
+      "dir": "./.garden/components",
+      "namespace": "garden"
     },
     {
       "dir": "./force-app/main/default/lwc",
