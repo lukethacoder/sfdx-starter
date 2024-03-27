@@ -6,9 +6,6 @@ import lwcConfig from './lwc.config.json' assert { type: 'json' }
 const CONFIG = {
   // lwc.config.json modules type
   modules: [...lwcConfig.modules],
-  lwc: {
-    disableSyntheticShadowSupport: false,
-  },
 }
 
 export default CONFIG
