@@ -31,7 +31,7 @@
     "@lwc/jest-shared": "^16.0.0",
     "@lwc/jest-transformer": "^16.0.0",
     "@lwc/synthetic-shadow": "^6.3.4",
-    "@prettier/plugin-xml": "3.3.1",
+    "@prettier/plugin-xml": "3.4.1",
     "@salesforce/eslint-config-lwc": "^3.5.3",
     "@salesforce/sfdx-lwc-jest": "^5.0.0",
     "@salesforce/wire-service-jest-util": "^4.1.4",
@@ -42,7 +42,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.2.2",
     "lwc": "^6.3.4",
-    "lwr": "^0.11.15",
+    "lwr": "^0.12.0",
     "prettier": "^3.2.5",
     "prettier-plugin-apex": "^2.1.0"
   },
