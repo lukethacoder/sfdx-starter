@@ -122,12 +122,12 @@ node --harmony setup-fflib.mjs e- ORG_ALIAS
 
 ## LWC Local Development
 
-We use the `@lwc-garden/core` package to facilitate local LWC development.
+We use the `@lwc-garden/utils` package to facilitate local LWC development.
 
 This can be run locally using:
 
 ```cmd
-npx @lwc-garden/core dev
+pnpm dev
 ```
 
 Read the [LWC Garden Documentation](https://lwc.garden/) for more information.
