@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  line-height: 1;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}

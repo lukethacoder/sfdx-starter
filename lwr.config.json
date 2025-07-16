@@ -1,0 +1,54 @@
+{
+  "lwc": {
+    "modules": [
+      {
+        "npm": "@lwc-garden/utils"
+      },
+      {
+        "dir": "./config/local",
+        "namespace": "local"
+      },
+      {
+        "dirs": ["./force-app/main/default/lwc"],
+        "namespace": "c"
+      },
+      {
+        "name": "@salesforce/community/Id",
+        "path": "./__mocks__/@salesforce/community/Id.js"
+      },
+      {
+        "name": "@salesforce/client/formFactor",
+        "path": "./__mocks__/@salesforce/client/formFactor.js"
+      }
+    ]
+  },
+  "moduleProviders": [
+    "@lwrjs/label-module-provider",
+    "@lwrjs/app-service/moduleProvider",
+    "@lukethacoder/lwrjs-lwc-module-provider",
+    "@lwrjs/npm-module-provider",
+    [
+      "@lwc-garden/utils/resolvers/apex.ts",
+      {
+        "paths": ["__mocks__/@salesforce/apex"]
+      }
+    ]
+  ],
+  "routes": [
+    {
+      "id": "app",
+      "path": "/",
+      "rootComponent": "local/app",
+      "layoutTemplate": "config/index.html",
+      "bootstrap": {
+        "syntheticShadow": true
+      }
+    }
+  ],
+  "assets": [
+    {
+      "dir": "$rootDir/force-app/main/default/staticresources/site",
+      "urlPath": "/sfsites/c/resource/site"
+    }
+  ]
+}
